@@ -35,7 +35,7 @@ namespace SignalRApi.Controllers
             return Ok("İndirim alanı eklendi.");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteDiscount(int id)
         {
             var value = _discountService.TGetById(id);

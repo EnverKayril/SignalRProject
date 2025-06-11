@@ -35,7 +35,7 @@ namespace SignalRApi.Controllers
             return Ok("Özellik alanı eklendi.");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteFeature(int id)
         {
             var value = _featureService.TGetById(id);

@@ -35,7 +35,7 @@ namespace SignalRApi.Controllers
             return Ok("Hakkımda alanı eklendi.");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteAbout(int id)
         {
             var value = _aboutService.TGetById(id);
